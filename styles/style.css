@@ -2,5 +2,89 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  background-color: #eeeeee;
+  /*#222831; #393E46; #00ADB5; #eeeeee;*/
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+}
+
+.menu-container {
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.menu-container > ul > li {
+  margin-left: 10px;
+  padding: 5px;
+}
+.menu-container,
+.menu-container ul,
+.menu-container li,
+.menu-container li a {
+  background-color: #222831;
+  color: white;
+  text-transform: capitalize;
+}
+
+.newtask-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 10px;
+}
+.newtask-container > input,
+.newtask-container > button {
+  border: 0px;
+}
+.newtask-container > input {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+}
+.newtask-container > button {
+  padding: 0px 20px;
+  background-color: #00adb5;
+  color: white;
+}
+
+.tasks-container {
+  height: 350px;
+  padding-top: 10px;
+}
+.task-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid rgb(218, 215, 215);
+  border-radius: 5px;
+}
+.task-container,
+.task-description,
+.task-description p,
+.task-controls,
+.task-timer,
+.task-timer span {
+  background-color: white;
+}
+.task-controls {
+  margin: 0px 5px;
+}
+
+.footer-container {
+  border-top: 1px solid #222831;
+  margin: 5px;
+  padding-top: 10px;
 }

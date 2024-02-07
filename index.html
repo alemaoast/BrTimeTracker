@@ -5,13 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BR TIME TRACKER</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <script type="module" src="src/App.js" defer></script>
+    <style></style>
   </head>
   <body>
     <div class="container">
-      <app-menu></app-menu>
-      <task-post></task-post>
-      <app-footer></app-footer>
+      <div class="menu-container">
+        <div class="menu-topnav"></div>
+        <div class="menu-expanded">
+          <ul>
+            <li><a href="#">current</a></li>
+            <li><a href="#">tasks</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">export</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="newtask-container">
+        <input type="text" placeholder="Descreva uma tarefa..." />
+        <button type="button">+</button>
+      </div>
+      <div class="tasks-container">
+        <div class="task-container">
+          <div class="task-description">
+            <p>
+              Descrição básica de uma tarefa muito grande e difícil de ser
+              executada.
+            </p>
+          </div>
+          <div class="task-controls">⏸</div>
+          <div class="task-timer">
+            <span>05:00</span>
+          </div>
+        </div>
+        <div class="task-container">
+          <div class="task-description">
+            <p>
+              Descrição básica de uma tarefa muito grande e difícil de ser
+              executada.
+            </p>
+          </div>
+          <div class="task-controls">▶</div>
+          <div class="task-timer">
+            <span>05:00</span>
+          </div>
+        </div>
+        <div class="task-container">
+          <div class="task-description">
+            <p>
+              Descrição básica de uma tarefa muito grande e difícil de ser
+              executada.
+            </p>
+          </div>
+          <div class="task-controls">▶</div>
+          <div class="task-timer">
+            <span>05:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container">
+        <p>Total hours: <span>15:00</span></p>
+      </div>
     </div>
   </body>
 </html>
